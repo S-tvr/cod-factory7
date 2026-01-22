@@ -6,11 +6,11 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.Date;
 
-public class ConcurrentDateTimeServer implements Runnable {
+public class ConcurrentDateTimeThread implements Runnable {
 
     private final Socket socket;
 
-    public ConcurrentDateTimeServer(Socket socket) {
+    public ConcurrentDateTimeThread(Socket socket) {
         this.socket = socket;
     }
 

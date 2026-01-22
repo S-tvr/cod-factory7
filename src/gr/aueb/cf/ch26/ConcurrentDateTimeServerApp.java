@@ -20,7 +20,7 @@ public class ConcurrentDateTimeServerApp {
 //                The ServerSocket stays open
                 Socket connectedFd = servFd.accept();
 
-                Thread socketThread = new Thread(new ConcurrentDateTimeServer(connectedFd));
+                Thread socketThread = new Thread(new ConcurrentDateTimeThread(connectedFd));
                 socketThread.start();
             }
 
