@@ -20,7 +20,7 @@ public class DateTimeServer extends Thread {
             servFd.bind(new InetSocketAddress("127.0.0.1", serverPort), 100);
 
             while (true) {
-                // temporary socket, close when finish.
+                // temporary socket, close when finished.
                 Socket connectedFd = servFd.accept();
                 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(connectedFd.getOutputStream()));
                 bw.write(new Date().toString());
