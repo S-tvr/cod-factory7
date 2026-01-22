@@ -14,7 +14,7 @@ public class MenuDoWhile {
         do {
             System.out.println("Please select one of the following: ");
             System.out.println("1. Insert");
-            System.out.println("2. Delete");
+            System.out.println("2. Deleters");
             System.out.println("3. Quit");
             choice = in.nextInt();
         } while (choice != 3);
